@@ -1,14 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const login = () => import(/* webpackChunkName: "login" */ '../components/login/Login.vue')
+const index = () => import(/* webpackChunkName: "index" */ '../components/index/Index.vue')
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+        path: '/',
+        name: 'login',
+        component: login
+    },
+    {
+        path: '/index',
+        name: 'index',
+        component: index
     },
     {
       path: '*',

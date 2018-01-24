@@ -31,21 +31,17 @@ let rendererConfig = {
   module: {
     rules: [
       {
-        test: /\.(js|vue)$/,
-        enforce: 'pre',
-        exclude: /node_modules/,
-        use: {
-          loader: 'eslint-loader',
-          options: {
-            formatter: require('eslint-friendly-formatter')
-          }
-        }
-      },
-      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader'
+        })
+      },
+      {
+        test: /\.less/,
+        use: ExtractTextPlugin.extract({
+            use: ['autoprefixer-loader', 'less-loader'],
+            fallback: 'style-loader'
         })
       },
       {
@@ -63,16 +59,24 @@ let rendererConfig = {
       },
       {
         test: /\.vue$/,
-        use: {
-          loader: 'vue-loader',
-          options: {
-            extractCSS: process.env.NODE_ENV === 'production',
-            loaders: {
-              sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1',
-              scss: 'vue-style-loader!css-loader!sass-loader'
+        use: [
+            {
+                loader: 'vue-loader',
+                options: {
+                    extractCSS: true,
+                    loaders: {
+                    sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1',
+                    scss: 'vue-style-loader!css-loader!sass-loader'
+                    }
+                }
+            },
+            {
+                loader: 'iview-loader',
+                options: {
+                    prefix: false
+                }
             }
-          }
-        }
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
