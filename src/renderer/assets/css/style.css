@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+img,
+input,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+span,
+tr,
+td,
+tbody,
+thead {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    background: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 400px #fff inset;
+    -webkit-text-fill-color: #ccc;
+}
+
+body {
+    font: 12px/1.5 "微软雅黑";
+    color: #333;
+    background: rgba(239, 242, 249, 1);
+}
+
+body {
+    font-family: "Microsoft YaHei" !important;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+

@@ -7,7 +7,7 @@
                     欢迎登录
                 </p>
                 <div class="form-con">
-                    <Form ref="loginForm" :rules="rules">
+                    <Form ref="loginForm">
                         <FormItem prop="userName">
                             <Input  placeholder="请输入用户名">
                                 <span slot="prepend">

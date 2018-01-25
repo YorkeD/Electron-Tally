@@ -1,0 +1,35 @@
+#header {
+  height: 60px;
+  background: #000;
+}
+#header .header_box {
+  height: 60px;
+}
+#header .header_box .logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+#header .header_box .logo:hover {
+  cursor: pointer;
+}
+#header .header_box .logo_title {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+#header .header_box .logo_title .title_text {
+  margin-left: 10px;
+}
+#header .header_box .banner_box {
+  height: 60px;
+  width: 400px;
+  line-height: 60px;
+  color: #fff;
+  margin-left: 50px;
+}
+#header .header_box .login_btn {
+  margin-top: 13px;
+  margin-right: 20px;
+}

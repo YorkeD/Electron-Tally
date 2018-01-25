@@ -7,20 +7,20 @@ const index = () => import(/* webpackChunkName: "index" */ '../components/index/
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-        path: '/',
-        name: 'login',
-        component: login
-    },
-    {
-        path: '/index',
-        name: 'index',
-        component: index
-    },
-    {
-      path: '*',
-      redirect: '/'
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'login',
+            component: login
+        },
+        {
+            path: '/index',
+            name: 'index',
+            component: index
+        },
+        {
+        path: '*',
+        redirect: '/'
+        }
+    ]
 })
