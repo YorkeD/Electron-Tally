@@ -1,13 +1,13 @@
 <template>
     <div id="app">
-        
-        <div class="common_box" v-if="pathData">
+        <div class="common_box">
             <!-- 头部 -->
-            <HeaderView></HeaderView>
+            <HeaderView v-if="pathData == 0"></HeaderView>
             <!-- 左侧导航 -->
-            <NavLeftView></NavLeftView>
+            <NavLeftView class="l" v-if="pathData == 0"></NavLeftView>
+            <router-view class="l" v-if="pathData == 1 || pathData == 0"></router-view>
         </div>
-        <router-view class="l"></router-view>
+        
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     name: 'vue-electronjs',
     data(){
         return{
-            pathData:false, // 用于判断导航和头部是否显示
+            pathData:0, // 用于判断导航和头部是否显示
         }
     },
     beforeMount(){
@@ -31,9 +31,11 @@ export default {
        $route(to,from){
            console.log(to.name,"to");
            if(to.name == 'login'){
-               this.pathData = false;
+               this.pathData = 1;
+           }else if(to.name == 'locking'){
+               this.pathData = 2;
            }else{
-               this.pathData = true;
+               this.pathData = 0;
            }
         //    console.log(from,"from");
        }   

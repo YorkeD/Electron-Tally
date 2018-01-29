@@ -35,7 +35,7 @@ export default {
                 this.$router.push({
                     name: 'locking'
                 });
-            }, 800);
+            }, 500);
             Cookies.set('locking', '1');
         }
     },

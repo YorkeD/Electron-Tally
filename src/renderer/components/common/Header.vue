@@ -27,11 +27,15 @@
                     </CarouselItem>
                 </Carousel>
             </div>
-            <Button class="login_btn r" @click="backLogin" type="error">退出登录</Button>
+            <div class="header_ben_all r">
+                <LockscreenView class="lock_box l"></LockscreenView>
+                <Button class="login_btn l" @click="backLogin" type="error">退出登录</Button>
+            </div>
         </div>
     </div>
 </template>
 <script>
+import LockscreenView from './Lockscreen'
 export default {
     data(){
         return{
@@ -53,6 +57,9 @@ export default {
         logoBtn(){
             this.$router.push({path:'/index'})
         }
+    },
+    components:{
+        LockscreenView
     }
 }
 </script>
