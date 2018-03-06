@@ -6,7 +6,9 @@ import store from './store'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import './assets/css/style.css'
+import VCharts from 'v-charts'
 Vue.use(iView)
+Vue.use(VCharts)
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
