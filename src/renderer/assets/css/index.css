@@ -4,10 +4,77 @@
 }
 #index .index_content .login_history {
   width: 50%;
+  height: 300px;
+  padding: 5px;
+}
+#index .index_content .login_history .history_title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #999;
+}
+#index .index_content .login_history .history_title .ivu-icon {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#index .index_content .login_history .ivu-table-wrapper {
+  margin-top: 20px;
+}
+#index .index_content .add_data {
+  width: 50%;
+  height: 300px;
+  padding: 5px;
+}
+#index .index_content .add_data .add_data_title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #999;
+}
+#index .index_content .add_data .add_data_title .ivu-icon {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#index .index_content .add_data .add_data_content {
+  margin-top: 20px;
+}
+#index .index_content .add_data .add_data_content .title_min_box {
+  margin-left: 15px;
+  font-weight: 400;
+}
+#index .index_content .consume_map_box {
+  width: 50%;
   height: 400px;
   padding: 5px;
 }
-#index .index_content .map_box {
+#index .index_content .consume_map_box .map_title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #999;
+}
+#index .index_content .consume_map_box .map_title .ivu-icon {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#index .index_content .consume_map_box .ve-pie {
+  margin-top: 20px;
+}
+#index .index_content .storage_map_box {
   width: 50%;
   height: 400px;
+  padding: 5px;
+}
+#index .index_content .storage_map_box .map_title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #999;
+}
+#index .index_content .storage_map_box .map_title .ivu-icon {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#index .index_content .storage_map_box .ve-pie {
+  margin-top: 20px;
 }
